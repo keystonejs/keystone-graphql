@@ -1,0 +1,27 @@
+{
+  "name": "keystone-graphql",
+  "version": "0.0.0",
+  "description": "GraphQL Helpers for use with KeystoneJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keystonejs/keystone-graphql.git"
+  },
+  "keywords": [
+    "keystone",
+    "keystonejs",
+    "graphql",
+    "schema",
+    "database",
+    "api"
+  ],
+  "author": "Jed Watson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keystonejs/keystone-graphql/issues"
+  },
+  "homepage": "https://github.com/keystonejs/keystone-graphql#readme"
+}

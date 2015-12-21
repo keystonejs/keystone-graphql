@@ -1,6 +1,6 @@
 {
   "name": "keystone-graphql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GraphQL Helpers for use with KeystoneJS",
   "main": "index.js",
   "scripts": {

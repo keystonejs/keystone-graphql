@@ -2,6 +2,7 @@
 
 exports.Types = {
 	CloudinaryImage: require('./types/CloudinaryImage'),
+	Code: require('./types/Code'),
 	Datetime: require('./types/Datetime'),
 	Email: require('./types/Email'),
 	Link: require('./types/Link'),

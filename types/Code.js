@@ -1,6 +1,6 @@
 'use strict'
 
-var GraphQL = require('graphql');
+const GraphQL = require('graphql');
 
 module.exports = (field) => ({
 	type: GraphQL.GraphQLString,

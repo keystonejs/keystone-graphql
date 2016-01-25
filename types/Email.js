@@ -27,7 +27,7 @@ const KeystoneEmailType = new GraphQL.GraphQLObjectType({
 			},
 			description: 'Protocol-less Gravatar image request URL',
 			resolve: (source, args) =>
-				source.gravatarUrl(args.size, args.defaultImage, args.rating),
+				source.gravatarUrl(args.size, args.defaultImage, args.rating)
 		},
 	},
 });

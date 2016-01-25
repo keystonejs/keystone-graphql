@@ -9,4 +9,5 @@ exports.Types = {
 	Location: require('./types/Location'),
 	Markdown: require('./types/Markdown'),
 	Name: require('./types/Name'),
+	Password: require('./types/Password'),
 };

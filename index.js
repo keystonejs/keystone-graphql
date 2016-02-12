@@ -10,4 +10,5 @@ exports.Types = {
 	Markdown: require('./types/Markdown'),
 	Name: require('./types/Name'),
 	Password: require('./types/Password'),
+	Text: require('./types/Text'),
 };

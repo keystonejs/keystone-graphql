@@ -8,6 +8,7 @@ exports.Types = {
 	Link: require('./types/Link'),
 	Location: require('./types/Location'),
 	Markdown: require('./types/Markdown'),
+	Money: require('./types/Money'),
 	Name: require('./types/Name'),
 	Password: require('./types/Password'),
 };

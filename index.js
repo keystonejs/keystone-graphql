@@ -1,6 +1,7 @@
 'use strict';
 
 exports.Types = {
+	Boolean: require('./types/Boolean'),
 	CloudinaryImage: require('./types/CloudinaryImage'),
 	Code: require('./types/Code'),
 	Datetime: require('./types/Datetime'),

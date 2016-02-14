@@ -11,4 +11,5 @@ exports.Types = {
 	Name: require('./types/Name'),
 	Number: require('./types/Number'),
 	Password: require('./types/Password'),
+	Textarea: require('./types/Textarea'),
 };

@@ -2,8 +2,10 @@
 
 var GraphQL = require('graphql');
 
-var KeystoneLocationType = new GraphQL.GraphQObjectType({
-	name: 'Keystone Location',
+var GeoPoint = require('./GeoPoint');
+
+var KeystoneLocationType = new GraphQL.GraphQLObjectType({
+	name: 'KeystoneLocation',
 	fields: {
 		name: {
 			type: GraphQL.GraphQLString,
@@ -37,10 +39,7 @@ var KeystoneLocationType = new GraphQL.GraphQObjectType({
 			type: GraphQL.GraphQLString,
 			description: 'Location country',
 		},
-		geo: {
-			type: GraphQL.GraphQLList(GraphQL.GraphQLString),
-			description: 'An array [longitude, latitude]',
-		},
+		geo: GeoPoint,
 	},
 });
 

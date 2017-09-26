@@ -1,8 +1,6 @@
-'use strict';
-
 const GraphQL = require('graphql');
 
-const KeystoneNameType = new GraphQL.GraphQLObjectType({
+module.exports = new GraphQL.GraphQLObjectType({
 	name: 'KeystoneName',
 	fields: {
 		first: {
@@ -16,5 +14,3 @@ const KeystoneNameType = new GraphQL.GraphQLObjectType({
 		},
 	},
 });
-
-module.exports = (field) => KeystoneNameType;

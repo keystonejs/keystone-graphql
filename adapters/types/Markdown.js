@@ -1,8 +1,6 @@
-'use strict';
-
 const GraphQL = require('graphql');
 
-const MarkdownFieldType = new GraphQL.GraphQLObjectType({
+module.exports = new GraphQL.GraphQLObjectType({
 	name: 'KeystoneMarkdown',
 	fields: {
 		md: {
@@ -15,5 +13,3 @@ const MarkdownFieldType = new GraphQL.GraphQLObjectType({
 		},
 	},
 });
-
-module.exports = (field) => MarkdownFieldType;

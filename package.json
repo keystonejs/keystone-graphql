@@ -1,6 +1,6 @@
 {
   "name": "keystone-graphql",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "GraphQL Helpers for use with KeystoneJS",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,15 @@
   "bugs": {
     "url": "https://github.com/keystonejs/keystone-graphql/issues"
   },
-  "homepage": "https://github.com/keystonejs/keystone-graphql#readme"
+  "homepage": "https://github.com/keystonejs/keystone-graphql#readme",
+  "dependencies": {
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.3",
+    "i": "^0.3.5",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1"
+  },
+  "peerDependencies": {
+    "keystone": "^4.0.0-beta.5"
+  }
 }

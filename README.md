@@ -44,8 +44,6 @@ Mongoose virtuals are supported with one caveat. Because GraphQL is strictly typ
 type of response expected from your virtual. Here is an example:
 
 ```javascript
-// models/Company.js
-
 const keystone = require('keystone');
 
 const User = new keystone.List('User');
@@ -61,8 +59,6 @@ If the type is a `Relationship`, you'll need to define the related list, but ins
 you'll need to use `_ref`. This is because Mongoose uses `ref` for it's own internal purposes. 
 
 ```javascript
-// models/Company.js
-
 const keystone = require('keystone');
 
 const Company = new keystone.List('Company');

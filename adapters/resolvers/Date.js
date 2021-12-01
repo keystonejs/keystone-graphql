@@ -1,9 +1,7 @@
-'use strict';
-
 const GraphQL = require('graphql');
+const moment = require('moment');
 
-module.exports = (field) => ({
-	type: GraphQL.GraphQLString,
+module.exports = (fieldPath) => ({
 	args: {
 		format: {
 			type: GraphQL.GraphQLString,
@@ -11,10 +9,5 @@ module.exports = (field) => ({
 				'http://momentjs.com/docs/#/displaying/format/',
 		},
 	},
-	resolve: (source, args) => {
-		if (args.format) {
-			return field.format(source, args.format);
-		}
-		return source.get(field.path);
-	},
+	resolve: (parent, { format = 'YYYY-MM-DD' }) => moment(parent[fieldPath]).format(format),
 });
